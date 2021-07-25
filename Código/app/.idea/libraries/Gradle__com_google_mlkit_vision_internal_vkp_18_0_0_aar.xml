@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:vision-internal-vkp:18.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2107e0e0d403dfa3e4c99be3d3fed8b7/transformed/vision-internal-vkp-18.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/63d1984ca342e141cd29156eacd9fe18/transformed/vision-internal-vkp-18.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a85b7befab2c373860f87e87c2299255/transformed/vision-internal-vkp-18.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a85b7befab2c373860f87e87c2299255/transformed/vision-internal-vkp-18.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a85b7befab2c373860f87e87c2299255/transformed/vision-internal-vkp-18.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.mlkit/vision-internal-vkp/18.0.0/6a8b08d2a93001c8d089863beda57683994fb63d/vision-internal-vkp-18.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

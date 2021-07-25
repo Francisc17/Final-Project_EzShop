@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <font
+        android:font="@font/acumin_pro_semicond_extralight"
+        android:fontStyle="normal"
+        android:fontWeight="200"
+        app:font="@font/acumin_pro_semicond_extralight"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+
+    <font
+        app:font="@font/acumin_pro_semicond_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <font
+        app:font="@font/acumin_pro_semicond_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+
+    <font
+        app:font="@font/acumin_pro_semicond_semibold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+
+    <font
+        app:font="@font/acumin_pro_semicond_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+
+</font-family>

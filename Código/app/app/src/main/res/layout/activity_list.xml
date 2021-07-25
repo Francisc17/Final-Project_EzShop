@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.list.view.ListActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp" />
+
+    <TextView
+        android:id="@+id/list_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constrainedWidth="true"
+        android:layout_marginEnd="15dp"
+        android:text="Lorem ipsum dolor sit vivamus."
+        android:textAppearance="@style/listTitleStyle.listActivity"
+        app:layout_constraintBottom_toTopOf="@id/list_description_tv"
+        app:layout_constraintEnd_toEndOf="@id/shared_iv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/shared_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/list_name_tv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/list_name_tv"
+        app:layout_constraintTop_toTopOf="@id/list_name_tv"
+        app:srcCompat="@drawable/ic_shared" />
+
+
+    <ImageButton
+        android:id="@+id/share_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintBottom_toBottomOf="@id/list_name_tv"
+        app:layout_constraintEnd_toStartOf="@id/edit_ib"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/shared_iv"
+        app:layout_constraintTop_toTopOf="@id/list_name_tv"
+        app:srcCompat="@drawable/ic_icon_share" />
+
+    <ImageButton
+        android:id="@+id/edit_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintBottom_toBottomOf="@id/list_name_tv"
+        app:layout_constraintEnd_toStartOf="@id/delete_ib"
+        app:layout_constraintStart_toEndOf="@id/share_ib"
+        app:layout_constraintTop_toTopOf="@id/list_name_tv"
+        app:srcCompat="@drawable/ic_icon_edit" />
+
+    <ImageButton
+        android:id="@+id/delete_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleX="1.05"
+        android:scaleY="1.05"
+        app:layout_constraintBottom_toBottomOf="@id/list_name_tv"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/edit_ib"
+        app:layout_constraintTop_toTopOf="@id/list_name_tv"
+        app:srcCompat="@drawable/ic_icon_trash" />
+
+    <TextView
+        android:id="@+id/list_description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Descrição"
+        android:textAppearance="@style/listDescriptionStyle"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/list_name_tv" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/list_description_tv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categorized_items_rv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/add_item_fab"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/separator" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_item_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="@color/medium_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_plus_24"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

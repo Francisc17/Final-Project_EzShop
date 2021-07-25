@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="35dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="32dp" />
+
+        <TextView
+            android:id="@+id/insert_product_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product"
+            android:textAppearance="@style/greenTitleLightStyle"
+            app:layout_constraintBottom_toTopOf="@id/insert_product_name"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/insert_product_name"
+            style="@style/textInputStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Nome"
+            android:inputType="text"
+            android:maxLength="40"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@id/insert_product_info"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/insert_product_title" />
+
+        <EditText
+            android:id="@+id/insert_product_info"
+            style="@style/textInputStyle"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="45dp"
+            android:gravity="top|start"
+            android:hint="Informação Adicional"
+            android:inputType="textMultiLine"
+            android:maxLength="512"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/insert_product_quantity"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/insert_product_name" />
+
+        <EditText
+            android:id="@+id/insert_product_quantity"
+            style="@style/textInputStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:drawableStart="@drawable/ic_icon_minus"
+            android:drawableEnd="@drawable/ic_icon_add"
+            android:ems="5"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:text="1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@id/insert_product_category"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/insert_product_info" />
+
+        <Spinner
+            android:id="@+id/insert_product_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/white"
+            android:spinnerMode="dialog"
+            android:theme="@style/CustomSpinnerDialog"
+            app:layout_constraintBottom_toBottomOf="@id/insert_product_quantity"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/insert_product_quantity"
+            app:layout_constraintTop_toTopOf="@id/insert_product_quantity" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/insert_product_image_cv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="45dp"
+            app:cardBackgroundColor="@color/dark_grey"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/insert_product_quantity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/insert_product_image_btn"
+                    style="@style/addImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_baseline_add_circle_outline_24"
+                    android:text="Adicionar imagem"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toTopOf="@id/images_placeholder_gridlayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <GridLayout
+                    android:id="@+id/images_placeholder_gridlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/insert_product_image_btn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/new_product_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:drawableEnd="@drawable/ic_icon_add_cart"
+            android:text="@string/add_product"
+            android:textAppearance="@style/newProductButtonStyle"
+            android:textColor="@color/green"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/insert_product_image_cv"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

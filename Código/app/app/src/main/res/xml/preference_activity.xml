@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:key="name"
+        app:summary="Francisco Luís Mesquita Chaves"
+        app:title="Nome" />
+
+    <EditTextPreference
+        app:key="email"
+        app:summary="xzy@yzx.com"
+        app:title="Email" />
+
+    <EditTextPreference
+        app:key="password"
+        app:summary="*******"
+        app:title="Password" />
+</PreferenceScreen>

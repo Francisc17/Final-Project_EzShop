@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:image-labeling-custom:16.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/841ed72c85a4579d378282802afd8e2d/transformed/image-labeling-custom-16.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d4d971464446f6a47984922b36f167ec/transformed/image-labeling-custom-16.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7aa2e6cb1d83db57b7f8b954c5baa551/transformed/image-labeling-custom-16.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7aa2e6cb1d83db57b7f8b954c5baa551/transformed/image-labeling-custom-16.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7aa2e6cb1d83db57b7f8b954c5baa551/transformed/image-labeling-custom-16.3.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.mlkit/image-labeling-custom/16.3.1/af12341446d749b80f43b6e47be8a61f3931b2f3/image-labeling-custom-16.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

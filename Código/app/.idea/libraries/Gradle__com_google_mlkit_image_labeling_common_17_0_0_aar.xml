@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:image-labeling-common:17.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c8166950ebc485caf449e003b07678a0/transformed/image-labeling-common-17.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8be3a2dff545826ef48721cfa3b7aea4/transformed/image-labeling-common-17.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d19c769b73370c2fabecb960841ad3f7/transformed/image-labeling-common-17.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d19c769b73370c2fabecb960841ad3f7/transformed/image-labeling-common-17.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d19c769b73370c2fabecb960841ad3f7/transformed/image-labeling-common-17.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.mlkit/image-labeling-common/17.0.0/5df00b27000c7b94d1effb9100f6a915adfa6854/image-labeling-common-17.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
